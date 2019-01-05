@@ -15,12 +15,13 @@ window.onload = function()
     }
 
     let tailleBalle = 80;
-    let xPos = Math.floor(Math.random() * (canvas.width-tailleBalle)) +  tailleBalle/2;
-    let yPos = Math.floor(Math.random() * (canvas.height-tailleBalle)) +  tailleBalle/2;
     let xVitesse = 10;
     let yVitesse = 5;
     canvas.height = $(window).height()-xVitesse*3;
     canvas.width =  $(window).width()-yVitesse*4;
+
+    let xPos = Math.floor(Math.random() * (canvas.width-tailleBalle)) +  tailleBalle/2;
+    let yPos = Math.floor(Math.random() * (canvas.height-tailleBalle)) +  tailleBalle/2;
 
     let limiteX = canvas.height;
 
